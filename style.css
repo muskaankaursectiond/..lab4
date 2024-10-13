@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color:rgb(218, 237, 231);
+    color:#000000;
+}
+header {
+    text-align: center;
+    padding: 22px;
+    background-color: rgb(231, 182, 231);
+}
+nav { 
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color:#ffffff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    transition: left 0.3s;
+}
+.column{
+    width:100%;
+    height: 100%;
+}
+content {
+    text-align: right;
+}
+/* SECTION STYLING */
+section {
+    background-color : white;
+    width: 50%;
+    margin: 10px 0;
+    padding: 20px;
+}
+ h1 {
+    color:#000000;
+}
+/* HOVER EFFECT FOR LINKS */
+a:hover {
+    color:#800080;
+    transition: width 2s;
+}
+/* ACTIVE  EFFECT , WHEN CLICKING*/
+a:active {
+    background-color: #b3b000;
+    transform: scale(0.90);
+}
+/* FOCUS EFFECT  , WHEN CLICKED*/
+a:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(160, 32, 240);
+}
+/* CUSTOM ANIMATION */
+@keyframes slideIn {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+  
+/* ANIMATION */
+section {
+    animation: slideIn 2s ease-out;
+}
+footer {
+    background-color:rgb(231, 182, 231);
+    padding: 20px;
+    text-align: center;
+}
